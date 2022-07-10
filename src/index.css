@@ -1,0 +1,17 @@
+/* Variables */
+:root {
+  --font-primary: 'Lato', sans-serif;
+}
+
+/* Universal Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  font-family: var(--font-primary);
+  font-size: 62.5%;
+}
