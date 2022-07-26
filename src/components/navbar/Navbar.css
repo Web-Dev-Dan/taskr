@@ -1,3 +1,38 @@
 .nav {
-    background-color: red;
+    height: 100px;
+    padding: 0 50px;
+}
+
+.nav .inner {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav__logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav__logo--icon {
+    background-color: var(--color-dark);
+    width: 50px;
+    height: 50px;
+    margin-right: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav__logo--icon i {
+    color: var(--color-light);
+    font-size: 30px;
+}
+
+.nav__logo--text {
+    color: var(--color-dark);
+    font-size: 50px;
+    font-weight: 600;
 }

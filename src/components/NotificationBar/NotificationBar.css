@@ -1,0 +1,23 @@
+.notification-bar {
+    background-color: var(--color-dark);
+    color: var(--color-light);
+    padding: 10px;
+    position: relative;
+}
+
+.notification-bar__button {
+    color: var(--color-light);
+    font-size: 2rem;
+    padding: 10px;
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+}
+
+.notification-bar__text {
+    font-size: 1.6rem;
+    font-weight: 100;
+    text-align: center;
+    padding: 0 50px;
+}
