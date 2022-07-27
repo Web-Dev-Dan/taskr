@@ -21,3 +21,14 @@
     text-align: center;
     padding: 0 50px;
 }
+
+@media only screen and (max-width: 600px) {
+    .notification-bar__button {
+        font-size: 2rem;
+    }
+
+    .notification-bar__text {
+        font-size: 1.4rem;
+        padding: 0 30px;
+    }
+}
