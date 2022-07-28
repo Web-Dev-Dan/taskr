@@ -11,16 +11,35 @@ function App() {
     setNotificationBarIsShown(false);
   }
 
-  const data = {
+  const [data, setData] = useState({
     "items": [
       {
         "id": 1,
-        "name": "Ticket 1"
+        "name": "Portfolio"
       }, {
         "id": 2,
-        "name": "Ticket 2"
+        "name": "Mamoru"
+      }, {
+        "id": 3,
+        "name": "Taskr"
+      }, {
+        "id": 4,
+        "name": "Wordle Clone"
+      }, {
+        "id": 5,
+        "name": "JavaScript To-Do List"
       }
     ]
+  });
+
+  function createNewProject(task) {
+    console.log('Works: ' + task);
+
+    setData(prev => {
+      prev.items.push({ "id": prev.items.length + 1, "name": task });
+      return prev;
+    })
+    console.log(data);
   }
 
   return (
@@ -31,6 +50,7 @@ function App() {
         <div className="content">
           <Aside
             data={data}
+            createNewProject={(task) => createNewProject(task)}
           />
           <Main />
         </div>

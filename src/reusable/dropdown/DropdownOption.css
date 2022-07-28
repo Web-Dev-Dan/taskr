@@ -1,5 +1,6 @@
 .dropdown-content__inner {
     display: flex;
+    position: relative;
 }
 
 .dropdown-content__inner:hover .dropdown-content__button,

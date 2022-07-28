@@ -40,3 +40,42 @@
     border-left: 3px solid var(--color-gray-dark);
     padding-bottom: 10px;
 }
+
+
+.dropdown-content__input-form {
+    padding-left: 30px;
+    margin: 0 15px 15px 0;
+    flex: 1;
+    display: flex;
+    justify-content: space-between;
+}
+
+.dropdown-content__input-form .input-form__input {
+    background-color: transparent;
+    font-family: var(--font-primary);
+    font-size: 1.6rem;
+    margin-right: 10px;
+    padding: 7px 5px 5px 5px;
+    flex: 1;
+    border: none;
+    border-bottom: 2px solid var(--color-gray-dark);
+    max-width: 80%;
+}
+
+.dropdown-content__input-form .input-form__button {
+    background-color: var(--color-dropdown-hover);
+    color: var(--color-darkest);
+    font-family: var(--font-primary);
+    font-size: 1.6rem;
+    min-width: 30px;
+    width: 30px;
+    min-height: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-right: 5px;
+}
+
+.dropdown-content__input-form .input-form__button:hover {
+    cursor: pointer;
+    filter: brightness(90%);
+}

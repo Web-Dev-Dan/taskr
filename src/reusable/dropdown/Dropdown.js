@@ -1,14 +1,29 @@
 
 import './Dropdown.css';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import DropdownOption from './DropdownOption';
 
-function Dropdown({ icon, title, data }) {
+function Dropdown({ icon, title, data, createNewProject }) {
+    // Toggle Project Dropdown:
     const [dropdownContentIsShown, setDropdownContentIsShown] = useState(false);
 
     function openDropdown() {
         console.log(`Toggled ${title}!`);
         setDropdownContentIsShown(!dropdownContentIsShown);
+    }
+
+    // Add New Project Input Form:
+    const [inputValue, setInputValue] = useState('');
+
+    function updateInputValue(e) {
+        setInputValue(e.target.value);
+    }
+
+    function submitInputValue(e) {
+        e.preventDefault();
+        console.log(inputValue);
+        createNewProject(inputValue);
+        setInputValue('');
     }
 
     return (
@@ -19,6 +34,14 @@ function Dropdown({ icon, title, data }) {
                 {dropdownContentIsShown ? <i className="dropdown-btn__icon fa-solid fa-caret-up"></i> : <i className="dropdown-btn__icon fa-solid fa-caret-down"></i>}
             </button>
             {dropdownContentIsShown && <div className="dropdown-content">
+                <form className="dropdown-content__input-form">
+                    <input onChange={updateInputValue} value={inputValue} className="input-form__input" type="text" placeholder="Add Project..." />
+                    <button onClick={(e) => submitInputValue(e)} className="input-form__button btn btn-transparent" type="submit">
+                        <div role="img" alt="Plus symbol to add new project">
+                            <i className="fa-solid fa-plus"></i>
+                        </div>
+                    </button>
+                </form>
                 {data.items.map(item => {
                     // console.log(item.name)
                     return (
