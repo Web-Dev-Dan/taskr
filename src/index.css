@@ -5,7 +5,12 @@
 
   --color-light: #f9f9f9;
   --color-dark: #333333;
+
+  --color-gray: #eeeeee;
+  --color-gray-dark: #cecece;
+  --color-gray-darkest: #808080;
 }
+
 
 /* Universal Reset */
 * {
@@ -31,6 +36,12 @@ body {
   height: 100%;
 }
 
+.content {
+  width: 100%;
+  /* padding: 0 50px; */
+  display: flex;
+}
+
 
 /* Text Styling */
 .text-bold {
@@ -39,6 +50,10 @@ body {
 
 
 /* Buttons */
+button {
+  font-family: var(--font-primary);
+}
+
 .btn {
   display: flex;
   justify-content: center;

@@ -1,16 +1,18 @@
 .nav {
-    height: 100px;
-    padding: 0 50px;
+    height: 150px;
+    padding: 0 50px 0 0;
 }
 
 .nav .inner {
-    max-width: 1000px;
+    /* max-width: 1000px; */
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
 }
 
 .nav__logo {
+    width: 300px;
+    border-right: 1px solid var(--color-gray);
     display: flex;
     justify-content: center;
     align-items: center;
