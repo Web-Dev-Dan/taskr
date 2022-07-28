@@ -38,7 +38,6 @@
 .dropdown-content {
     margin-left: 40px;
     border-left: 3px solid var(--color-gray-dark);
-    /* height: 50px; */
 }
 
 .dropdown-content__inner {
