@@ -38,6 +38,7 @@
 .dropdown-content {
     margin-left: 40px;
     border-left: 3px solid var(--color-gray-dark);
+    padding-bottom: 10px;
 }
 
 .dropdown-content__inner {
