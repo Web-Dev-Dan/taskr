@@ -3,12 +3,16 @@
   --font-primary: 'Lato', sans-serif;
   --font-primary: 'Nunito', sans-serif;
 
+  --color-primary: rgb(85, 175, 175);
+
   --color-light: #f9f9f9;
   --color-dark: #333333;
 
   --color-gray: #eeeeee;
   --color-gray-dark: #cecece;
   --color-gray-darkest: #808080;
+
+  --color-orange: rgb(255, 237, 203);
 }
 
 
@@ -40,6 +44,7 @@ body {
   width: 100%;
   /* padding: 0 50px; */
   display: flex;
+  flex: 1;
 }
 
 

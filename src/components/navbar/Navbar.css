@@ -20,12 +20,14 @@
 
 .nav__logo--icon {
     background-color: var(--color-dark);
+    background-color: var(--color-primary);
     width: 50px;
     height: 50px;
     margin-right: 15px;
     display: flex;
     justify-content: center;
     align-items: center;
+    border-radius: 50%;
 }
 
 .nav__logo--icon i {
@@ -35,6 +37,7 @@
 
 .nav__logo--text {
     color: var(--color-dark);
+    color: var(--color-primary);
     font-size: 50px;
     font-weight: 600;
 }

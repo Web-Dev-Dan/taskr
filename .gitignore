@@ -21,3 +21,10 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+
+
+
+# TO-DOS:
+- Create 2 new button variations similar to Dropdown.js
+- One for simple click button (no arrow)
+- One for notifications (number bubble instead of arrow) - use for 'Reports' (like a journal of activity) and 'Messages'

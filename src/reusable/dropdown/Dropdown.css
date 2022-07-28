@@ -69,6 +69,15 @@
 .dropdown-content__button--text {
     font-size: 1.6rem;
     font-weight: 600;
+    max-width: 120px;
+    white-space: nowrap;
+    overflow-x: scroll;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.dropdown-content__button--text::-webkit-scrollbar {
+    display: none;
 }
 
 .dropdown-content__options {

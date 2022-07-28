@@ -6,7 +6,7 @@ function Dropdown({ icon, title }) {
     const [dropdownContentIsShown, setDropdownContentIsShown] = useState(false);
 
     function openDropdown() {
-        console.log(`Opened ${title}!`);
+        console.log(`Toggled ${title}!`);
         setDropdownContentIsShown(!dropdownContentIsShown);
     }
 
@@ -31,7 +31,7 @@ function Dropdown({ icon, title }) {
                 <div className="dropdown-content__inner">
                     <button className="dropdown-content__button btn-transparent">
                         <i className="dropdown-content__button--icon fa-solid fa-file"></i>
-                        <h4 className="dropdown-content__button--text">Portfolio</h4>
+                        <h4 className="dropdown-content__button--text">Bug Tracker</h4>
                     </button>
                     <button className="dropdown-content__options btn-transparent">
                         <i className="fa-solid fa-ellipsis"></i>
@@ -41,7 +41,7 @@ function Dropdown({ icon, title }) {
                 <div className="dropdown-content__inner">
                     <button className="dropdown-content__button btn-transparent">
                         <i className="dropdown-content__button--icon fa-solid fa-file"></i>
-                        <h4 className="dropdown-content__button--text">Portfolio</h4>
+                        <h4 className="dropdown-content__button--text">Wordle Clone and something else...</h4>
                     </button>
                     <button className="dropdown-content__options btn-transparent">
                         <i className="fa-solid fa-ellipsis"></i>

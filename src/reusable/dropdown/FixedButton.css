@@ -1,0 +1,23 @@
+.fixed-btn {
+    width: 100%;
+    padding: 15px 15px 15px 20px;
+    border-left: 10px solid transparent;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.fixed-btn:hover {
+    cursor: pointer;
+    background-color: var(--color-dropdown-hover);
+    border-left: 10px solid var(--color-dark);
+}
+
+.fixed-btn i {
+    font-size: 1.8rem;
+    margin-right: 10px;
+}
+
+.fixed-btn__title {
+    font-size: 2rem;
+}
