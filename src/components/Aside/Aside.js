@@ -18,6 +18,7 @@ function Aside({ data }) {
                     <Dropdown
                         icon="fa-solid fa-bolt"
                         title="Projects"
+                        data={data}
                     />
                     <NotifyButton
                         icon="fa-solid fa-bug"
