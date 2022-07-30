@@ -1,9 +1,10 @@
 
 import './DropdownOption.css';
 
-function DropdownOption({ id, title }) {
+function DropdownOption({ id, title, dateCreated, timeCreated }) {
     function dropdownClicked() {
-        console.log(`Option "${title}" clicked!`);
+        console.log(`Option "${title}" clicked! ID: ${id}`);
+        console.log(`Created at ${timeCreated} on ${dateCreated}.`);
     }
 
     function dropdownOptionsClicked() {

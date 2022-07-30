@@ -15,28 +15,66 @@ function App() {
     "items": [
       {
         "id": 1,
-        "name": "Portfolio"
+        "name": "Portfolio",
+        "dateCreated": 'Friday 29 July, 2022',
+        "timeCreated": '10:20'
       }, {
         "id": 2,
-        "name": "Mamoru"
+        "name": "Mamoru",
+        "dateCreated": 'Friday 29 July, 2022',
+        "timeCreated": '10:20'
       }, {
         "id": 3,
-        "name": "Taskr"
+        "name": "Taskr",
+        "dateCreated": 'Friday 29 July, 2022',
+        "timeCreated": '10:20'
       }, {
         "id": 4,
-        "name": "Wordle Clone"
+        "name": "Wordle Clone",
+        "dateCreated": 'Friday 29 July, 2022',
+        "timeCreated": '10:20'
       }, {
         "id": 5,
-        "name": "JavaScript To-Do List"
+        "name": "JavaScript To-Do List",
+        "dateCreated": 'Friday 29 July, 2022',
+        "timeCreated": '10:20'
       }
     ]
   });
+
+  function getCurrentDate() {
+    const weekdays = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
+    const months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
+    const date = new Date();
+    return `${weekdays[date.getDay()]} ${date.getDate()} ${months[date.getMonth()]}, ${date.getFullYear()}`;
+  }
+
+  function getCurrentTime() {
+    const date = new Date();
+    let hours = date.getHours();
+    let minutes = date.getMinutes();
+
+    if (hours < 10) {
+      hours = `${0}${hours}`;
+    }
+
+    if (minutes < 10) {
+      minutes = `${0}${minutes}`;
+    }
+
+    return `${hours}:${minutes}`;
+  }
 
   function createNewProject(task) {
     console.log('Works: ' + task);
 
     setData(prev => {
-      prev.items.push({ "id": prev.items.length + 1, "name": task });
+      prev.items.push({
+        "id": prev.items.length + 1,
+        "name": task,
+        "dateCreated": getCurrentDate(),
+        "timeCreated": getCurrentTime()
+      });
       return prev;
     })
     console.log(data);

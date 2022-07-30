@@ -49,6 +49,8 @@ function Dropdown({ icon, title, data, createNewProject }) {
                             key={item.id}
                             id={item.id}
                             title={item.name}
+                            dateCreated={item.dateCreated}
+                            timeCreated={item.timeCreated}
                         />
                     )
                 })}
