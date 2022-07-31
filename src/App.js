@@ -1,4 +1,4 @@
-import { useState, useSyncExternalStore } from 'react';
+import { useEffect, useInsertionEffect, useState, useSyncExternalStore } from 'react';
 import Aside from './components/Aside/Aside';
 import Main from './components/Main/Main';
 import Navbar from './components/Navbar/Navbar';
@@ -6,11 +6,13 @@ import NotificationBar from './components/NotificationBar/NotificationBar';
 
 
 function App() {
+  // Notification Bar:
   const [notificationBarIsShown, setNotificationBarIsShown] = useState(true);
   function closeNotificationBar() {
     setNotificationBarIsShown(false);
   }
 
+  // Placeholder Data:
   const [data, setData] = useState({
     "items": [
       {
@@ -42,6 +44,7 @@ function App() {
     ]
   });
 
+  // Get Current Date:
   function getCurrentDate() {
     const weekdays = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
     const months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
@@ -49,6 +52,7 @@ function App() {
     return `${weekdays[date.getDay()]} ${date.getDate()} ${months[date.getMonth()]}, ${date.getFullYear()}`;
   }
 
+  // Get Current Time:
   function getCurrentTime() {
     const date = new Date();
     let hours = date.getHours();
@@ -65,6 +69,7 @@ function App() {
     return `${hours}:${minutes}`;
   }
 
+  // Create New Project:
   function createNewProject(task) {
     console.log('Works: ' + task);
 
@@ -80,6 +85,27 @@ function App() {
     console.log(data);
   }
 
+  // Main Area Display:
+  const [projectIsShown, setProjectIsShown] = useState(true);
+  const [projectId, setProjectId] = useState(1);
+  const [ticketIsShown, setTicketIsShown] = useState(false);
+  const [ticketId, setTicketId] = useState(1);
+
+  const [currentProject, setCurrentProject] = useState(data.items);
+
+  // Select Project:
+  function projectOpened(id) {
+    setCurrentProject(data.items.filter(project => project.id === projectId));
+    setProjectId(id);
+
+    console.log(`Current Project: ${currentProject[0]}`);
+    console.log(`Current ID: ${projectId}`);
+  }
+
+  useEffect(() => {
+
+  }, [currentProject]);
+
   return (
     <div className="App">
       <div className="container">
@@ -89,8 +115,16 @@ function App() {
           <Aside
             data={data}
             createNewProject={(task) => createNewProject(task)}
+            projectOpened={(id) => projectOpened(id)}
           />
-          <Main />
+          <Main
+            data={data}
+            projectIsShown={projectIsShown}
+            projectId={projectId}
+            ticketIsShown={ticketIsShown}
+            ticketId={ticketId}
+            currentProject={currentProject[0]}
+          />
         </div>
       </div>
     </div>

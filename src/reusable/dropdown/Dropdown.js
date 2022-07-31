@@ -3,7 +3,7 @@ import './Dropdown.css';
 import { useEffect, useState } from 'react';
 import DropdownOption from './DropdownOption';
 
-function Dropdown({ icon, title, data, createNewProject }) {
+function Dropdown({ icon, title, data, createNewProject, projectOpened }) {
     // Toggle Project Dropdown:
     const [dropdownContentIsShown, setDropdownContentIsShown] = useState(false);
 
@@ -51,6 +51,7 @@ function Dropdown({ icon, title, data, createNewProject }) {
                             title={item.name}
                             dateCreated={item.dateCreated}
                             timeCreated={item.timeCreated}
+                            projectOpened={projectOpened}
                         />
                     )
                 })}

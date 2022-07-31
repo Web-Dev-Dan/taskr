@@ -4,7 +4,7 @@ import FixedButton from '../../reusable/dropdown/FixedButton';
 import NotifyButton from '../../reusable/dropdown/NotifyButton';
 import './Aside.css';
 
-function Aside({ data, createNewProject }) {
+function Aside({ data, createNewProject, projectOpened }) {
     // console.log(data.items);
 
     return (
@@ -20,6 +20,7 @@ function Aside({ data, createNewProject }) {
                         title="Projects"
                         data={data}
                         createNewProject={createNewProject}
+                        projectOpened={projectOpened}
                     />
                     <NotifyButton
                         icon="fa-solid fa-bug"
