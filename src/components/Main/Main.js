@@ -13,6 +13,7 @@ function Main({
     // Get Current Project:
     const getCurrentProject = data.items.filter(project => project.id === projectId);
     const currentProject = getCurrentProject[0];
+    console.log(currentProject);
 
     return (
         <main className="main">
@@ -21,6 +22,9 @@ function Main({
                     projectName={currentProject.name}
                     projectDateCreated={currentProject.dateCreated}
                     projectTimeCreated={currentProject.timeCreated}
+                    projectToDo={currentProject.toDo}
+                    projectInProgress={currentProject.inProgress}
+                    projectComplete={currentProject.complete}
                 />
             }
 

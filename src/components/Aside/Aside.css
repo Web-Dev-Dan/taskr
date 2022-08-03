@@ -6,6 +6,8 @@
 }
 
 .aside__content {
+    /* background-color: red; */
+    max-height: calc(100vh - 120px);
     height: 100%;
     padding-bottom: 50px;
     display: flex;

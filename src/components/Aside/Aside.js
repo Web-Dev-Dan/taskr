@@ -9,6 +9,12 @@ function Aside({ data, createNewProject, projectOpened }) {
 
     return (
         <aside className="aside">
+            <div className="nav__logo">
+                <div className="nav__logo--icon">
+                    <i className="fa-solid fa-layer-group"></i>
+                </div>
+                <p className="nav__logo--text">taskr</p>
+            </div>
             <div className="aside__content">
                 <div className="aside__content--top">
                     <FixedButton

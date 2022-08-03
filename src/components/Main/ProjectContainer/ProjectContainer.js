@@ -5,8 +5,13 @@ import './ProjectContainer.css';
 function ProjectContainer({
     projectName,
     projectDateCreated,
-    projectTimeCreated
+    projectTimeCreated,
+    projectToDo,
+    projectInProgress,
+    projectComplete
 }) {
+
+    console.log(projectToDo)
 
     return (
         <div className="project-container">
