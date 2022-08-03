@@ -38,23 +38,156 @@ function App() {
           "tag": "UIDesign",
           "comments": ["This is a nice project!", "Good job!"]
         }],
-        "inProgress": [],
-        "complete": []
+        "inProgress": [{
+          "id": 1,
+          "name": "Create New Wireframe",
+          "author": "Dan",
+          "dateCreated": "6h ago",
+          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+          "tag": "UIDesign",
+          "comments": ["This is a nice project!", "Good job!"]
+        }],
+        "complete": [{
+          "id": 1,
+          "name": "Create New Wireframe",
+          "author": "Dan",
+          "dateCreated": "6h ago",
+          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+          "tag": "UIDesign",
+          "comments": ["This is a nice project!", "Good job!"]
+        }]
       }, {
         "id": 2,
         "name": "Taskr",
         "dateCreated": 'Friday 29 July, 2022',
-        "timeCreated": '10:20'
+        "timeCreated": '10:20',
+        "toDo": [{
+          "id": 1,
+          "name": "Create New Wireframe",
+          "author": "Dan",
+          "dateCreated": "6h ago",
+          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+          "tag": "UIDesign",
+          "comments": ["This is a nice project!", "Good job!"]
+        },
+        {
+          "id": 2,
+          "name": "Create Banner",
+          "author": "Mike",
+          "dateCreated": "6h ago",
+          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+          "tag": "UIDesign",
+          "comments": ["This is a nice project!", "Good job!"]
+        }],
+        "inProgress": [{
+          "id": 1,
+          "name": "Create New Wireframe",
+          "author": "Dan",
+          "dateCreated": "6h ago",
+          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+          "tag": "UIDesign",
+          "comments": ["This is a nice project!", "Good job!"]
+        }],
+        "complete": [{
+          "id": 1,
+          "name": "Create New Wireframe",
+          "author": "Dan",
+          "dateCreated": "6h ago",
+          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+          "tag": "UIDesign",
+          "comments": ["This is a nice project!", "Good job!"]
+        }]
       }, {
         "id": 3,
         "name": "Wordle Clone",
         "dateCreated": 'Friday 29 July, 2022',
-        "timeCreated": '10:20'
+        "timeCreated": '10:20',
+        "toDo": [{
+          "id": 1,
+          "name": "Create New Wireframe",
+          "author": "Dan",
+          "dateCreated": "6h ago",
+          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+          "tag": "UIDesign",
+          "comments": ["This is a nice project!", "Good job!"]
+        }],
+        "inProgress": [{
+          "id": 1,
+          "name": "Create New Wireframe",
+          "author": "Dan",
+          "dateCreated": "6h ago",
+          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+          "tag": "UIDesign",
+          "comments": ["This is a nice project!", "Good job!"]
+        },
+        {
+          "id": 2,
+          "name": "Create New Wireframe",
+          "author": "Dan",
+          "dateCreated": "6h ago",
+          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+          "tag": "UIDesign",
+          "comments": ["This is a nice project!", "Good job!"]
+        }],
+        "complete": [{
+          "id": 1,
+          "name": "Create New Wireframe",
+          "author": "Dan",
+          "dateCreated": "6h ago",
+          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+          "tag": "UIDesign",
+          "comments": ["This is a nice project!", "Good job!"]
+        }]
       }, {
         "id": 4,
         "name": "JavaScript To-Do List",
         "dateCreated": 'Friday 29 July, 2022',
-        "timeCreated": '10:20'
+        "timeCreated": '10:20',
+        "toDo": [{
+          "id": 1,
+          "name": "Create New Wireframe",
+          "author": "Dan",
+          "dateCreated": "6h ago",
+          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+          "tag": "UIDesign",
+          "comments": ["This is a nice project!", "Good job!"]
+        },
+        {
+          "id": 2,
+          "name": "Create Banner",
+          "author": "Mike",
+          "dateCreated": "6h ago",
+          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+          "tag": "UIDesign",
+          "comments": ["This is a nice project!", "Good job!"]
+        }],
+        "inProgress": [{
+          "id": 1,
+          "name": "Create New Wireframe",
+          "author": "Dan",
+          "dateCreated": "6h ago",
+          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+          "tag": "UIDesign",
+          "comments": ["This is a nice project!", "Good job!"]
+        }],
+        "complete": [{
+          "id": 1,
+          "name": "Create New Wireframe",
+          "author": "Dan",
+          "dateCreated": "6h ago",
+          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+          "tag": "UIDesign",
+          "comments": ["This is a nice project!", "Good job!"]
+        },
+        {
+          "id": 2,
+          "name": "Create New Wireframe",
+          "author": "Dan",
+          "dateCreated": "6h ago",
+          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+          "tag": "UIDesign",
+          "comments": ["This is a nice project!", "Good job!"]
+        }]
       }
     ]
   });
