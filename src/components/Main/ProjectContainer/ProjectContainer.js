@@ -22,8 +22,11 @@ function ProjectContainer({
                 <div className="main__list">
                     {/* List Header */}
                     <div className="main__list-header">
-                        <h3 className="list-header__title">To Do</h3>
-                        <p className="list-header__subtitle">2 tasks remaining</p>
+                        <i className="main__list-header--icon fa-solid fa-layer-group color-primary"></i>
+                        <div className="main__list-header--text">
+                            <h3 className="list-header__title">To Do</h3>
+                            <p className="list-header__subtitle">2 tasks remaining</p>
+                        </div>
                     </div>
                     {/* List Button */}
                     <button className="list__add-btn btn">
@@ -34,9 +37,11 @@ function ProjectContainer({
                     <div className="list">
                         {/* List Items */}
                         <div className="list-item">
-                            <h4 className="list-item__title">Create New Wireframe</h4>
-                            <p className="list-item__info">Daniel Healy, 6h ago</p>
-                            <p className="list-item__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                            <button className="list-item__button btn btn-transparent">
+                                <h4 className="list-item__title">Create New Wireframe</h4>
+                                <p className="list-item__info">Dan, 6h ago</p>
+                                <p className="list-item__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                            </button>
                             <div className="list-item__footer">
                                 <p className="list-item__tag">#UIDesign</p>
                                 <button className="list-item__comments-btn btn btn-transparent">
@@ -60,8 +65,11 @@ function ProjectContainer({
                 <div className="main__list">
                     {/* List Header */}
                     <div className="main__list-header">
-                        <h3 className="list-header__title">In Progress</h3>
-                        <p className="list-header__subtitle">2 tasks remaining</p>
+                        <i className="main__list-header--icon fa-solid fa-trowel-bricks color-yellow"></i>
+                        <div className="main__list-header--text">
+                            <h3 className="list-header__title">In Progress</h3>
+                            <p className="list-header__subtitle">2 tasks remaining</p>
+                        </div>
                     </div>
                     {/* List Button */}
                     <button className="list__add-btn btn">
@@ -77,8 +85,11 @@ function ProjectContainer({
                 <div className="main__list">
                     {/* List Header */}
                     <div className="main__list-header">
-                        <h3 className="list-header__title">Complete</h3>
-                        <p className="list-header__subtitle">2 tasks remaining</p>
+                        <i className="main__list-header--icon fa-solid fa-fire color-green"></i>
+                        <div className="main__list-header--text">
+                            <h3 className="list-header__title">Complete</h3>
+                            <p className="list-header__subtitle">2 tasks remaining</p>
+                        </div>
                     </div>
                     {/* List Button */}
                     <button className="list__add-btn btn">
