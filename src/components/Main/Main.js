@@ -2,9 +2,15 @@
 import { useState } from 'react';
 import './Main.css';
 
-function Main({ projectIsShown, projectId, ticketIsShown, ticketId, currentProject }) {
-    console.log('---IN MAIN---')
-    console.log(currentProject);
+function Main({
+    data,
+    projectIsShown,
+    projectId,
+    ticketIsShown,
+    ticketId
+}) {
+    const getCurrentProject = data.items.filter(project => project.id === projectId);
+    const currentProject = getCurrentProject[0];
 
     return (
         <main className="main">

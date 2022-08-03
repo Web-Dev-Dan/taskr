@@ -71,7 +71,7 @@ function App() {
 
   // Create New Project:
   function createNewProject(task) {
-    console.log('Works: ' + task);
+    // console.log('Works: ' + task);
 
     setData(prev => {
       prev.items.push({
@@ -82,7 +82,7 @@ function App() {
       });
       return prev;
     })
-    console.log(data);
+    // console.log(data);
   }
 
   // Main Area Display:
@@ -91,20 +91,15 @@ function App() {
   const [ticketIsShown, setTicketIsShown] = useState(false);
   const [ticketId, setTicketId] = useState(1);
 
-  const [currentProject, setCurrentProject] = useState(data.items);
+  // const [currentProject, setCurrentProject] = useState(data.items);
+  // const [testFunction, setTestFunction] = useState(1);
 
   // Select Project:
   function projectOpened(id) {
-    setCurrentProject(data.items.filter(project => project.id === projectId));
+    // setCurrentProject(data.items.filter(project => project.id === projectId));
     setProjectId(id);
-
-    console.log(`Current Project: ${currentProject[0]}`);
-    console.log(`Current ID: ${projectId}`);
+    // setTestFunction(id);
   }
-
-  useEffect(() => {
-
-  }, [currentProject]);
 
   return (
     <div className="App">
@@ -123,7 +118,7 @@ function App() {
             projectId={projectId}
             ticketIsShown={ticketIsShown}
             ticketId={ticketId}
-            currentProject={currentProject[0]}
+          // currentProject={currentProject[0]}
           />
         </div>
       </div>
