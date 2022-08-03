@@ -1,4 +1,12 @@
-.main__head {}
+.project-container {
+    /* z-index: 100;
+    overflow: scroll; */
+}
+
+/* Main Header */
+.main__head {
+    margin-bottom: 30px;
+}
 
 .main__head-info {}
 
@@ -20,4 +28,133 @@
     color: var(--color-gray-darkest);
     font-size: 1.8rem;
     font-weight: 100;
+}
+
+/* Main Content */
+.main__content {
+    width: 100%;
+    height: 500px;
+    display: flex;
+}
+
+.main__list {
+    /* background-color: yellow; */
+    height: 100px;
+    margin-right: 30px;
+    flex: 1;
+}
+
+.main__list-header {
+    margin-bottom: 20px;
+}
+
+.main__list:last-child {
+    margin-right: 0;
+}
+
+.list-header__title {
+    font-size: 2.4rem;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+.list-header__subtitle {
+    color: var(--color-gray-darkest);
+    font-size: 1.6rem;
+    font-weight: 300;
+}
+
+.list__add-btn {
+    background-color: var(--color-dark);
+    color: var(--color-light);
+    width: 100%;
+    padding: 10px;
+    border: none;
+}
+
+.list__add-btn:hover {
+    background-color: black;
+}
+
+.list__add-btn--icon {
+    font-size: 1.8rem;
+    margin-right: 8px;
+}
+
+.list__add-btn--text {
+    font-size: 1.8rem;
+    font-weight: 400;
+}
+
+.list {
+    /* background-color: yellow; */
+    width: 100%;
+    height: 500px;
+    margin: 30px 0;
+    overflow-y: scroll;
+}
+
+
+/* List Item */
+.list-item {
+    /* background-color: red; */
+    width: 100%;
+    min-height: 200px;
+    margin-bottom: 20px;
+    padding: 20px 10px;
+    border-top: 3px solid var(--color-gray-darkest);
+}
+
+.list-item:last-child {
+    margin-bottom: 0;
+}
+
+.list-item__title {
+    font-size: 2rem;
+    margin-bottom: 5px;
+}
+
+.list-item__info {
+    color: var(--color-gray-darkest);
+    font-size: 1.6rem;
+    font-weight: 100;
+}
+
+.list-item__description {
+    font-size: 1.6rem;
+    font-weight: 300;
+    margin: 15px 0;
+}
+
+.list-item__footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.list-item__tag {
+    color: rgb(251, 113, 226);
+    color: var(--color-primary);
+    font-size: 1.6rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.list-item__comments-btn {
+    color: var(--color-gray-darkest);
+    font-size: 1.6rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding: 5px;
+}
+
+.list-item__comments-btn i {
+    margin-right: 10px;
+}
+
+
+
+.list-item:hover {
+    background-color: var(--color-primary-light);
+    border-top: 3px solid var(--color-primary);
 }
