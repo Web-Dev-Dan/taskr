@@ -27,34 +27,34 @@ function App() {
           "dateCreated": "6h ago",
           "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
           "tag": "UIDesign",
-          "comments": ["This is a nice project!", "Good job!"]
+          "comments": ["This is a nice project!", "Good job!", "This is a nice project!", "Good job!"]
         },
         {
           "id": 2,
-          "name": "Create Banner",
+          "name": "Update Email Form",
           "author": "Mike",
-          "dateCreated": "6h ago",
-          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-          "tag": "UIDesign",
+          "dateCreated": "1 day ago",
+          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, dolore magna aliqua.",
+          "tag": "Frontend",
           "comments": ["This is a nice project!", "Good job!"]
         }],
         "inProgress": [{
           "id": 1,
-          "name": "Create New Wireframe",
+          "name": "Add New Projects",
           "author": "Dan",
-          "dateCreated": "6h ago",
+          "dateCreated": "2 days ago",
           "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-          "tag": "UIDesign",
+          "tag": "Frontend",
           "comments": ["This is a nice project!", "Good job!"]
         }],
         "complete": [{
           "id": 1,
-          "name": "Create New Wireframe",
+          "name": "Publish Website",
           "author": "Dan",
           "dateCreated": "6h ago",
           "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-          "tag": "UIDesign",
-          "comments": ["This is a nice project!", "Good job!"]
+          "tag": "Frontend",
+          "comments": []
         }]
       }, {
         "id": 2,
@@ -63,39 +63,39 @@ function App() {
         "timeCreated": '10:20',
         "toDo": [{
           "id": 1,
-          "name": "Create New Wireframe",
-          "author": "Dan",
-          "dateCreated": "6h ago",
+          "name": "Update Task Cards",
+          "author": "Steve",
+          "dateCreated": "3 days ago",
           "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-          "tag": "UIDesign",
-          "comments": ["This is a nice project!", "Good job!"]
+          "tag": "Frontend",
+          "comments": ["This is a nice project!", "Good job!", "This is a nice project!", "Good job!", "This is a nice project!", "Good job!", "This is a nice project!"]
         },
         {
           "id": 2,
-          "name": "Create Banner",
+          "name": "Create Dark Mode",
           "author": "Mike",
-          "dateCreated": "6h ago",
+          "dateCreated": "Just Now",
           "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
           "tag": "UIDesign",
-          "comments": ["This is a nice project!", "Good job!"]
+          "comments": []
         }],
         "inProgress": [{
           "id": 1,
-          "name": "Create New Wireframe",
+          "name": "Create List Component",
           "author": "Dan",
-          "dateCreated": "6h ago",
+          "dateCreated": "2h ago",
           "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-          "tag": "UIDesign",
-          "comments": ["This is a nice project!", "Good job!"]
+          "tag": "Frontend",
+          "comments": []
         }],
         "complete": [{
           "id": 1,
-          "name": "Create New Wireframe",
+          "name": "Create Item Card",
           "author": "Dan",
-          "dateCreated": "6h ago",
+          "dateCreated": "1 day ago",
           "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-          "tag": "UIDesign",
-          "comments": ["This is a nice project!", "Good job!"]
+          "tag": "Frontend",
+          "comments": ["Good job!"]
         }]
       }, {
         "id": 3,
@@ -104,36 +104,36 @@ function App() {
         "timeCreated": '10:20',
         "toDo": [{
           "id": 1,
-          "name": "Create New Wireframe",
-          "author": "Dan",
-          "dateCreated": "6h ago",
-          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-          "tag": "UIDesign",
+          "name": "Create Word Database",
+          "author": "Mike",
+          "dateCreated": "1 day ago",
+          "description": "Lorem ipsum dolor sit amet.",
+          "tag": "Backend",
           "comments": ["This is a nice project!", "Good job!"]
         }],
         "inProgress": [{
           "id": 1,
-          "name": "Create New Wireframe",
+          "name": "Update Display Colour Palette",
           "author": "Dan",
-          "dateCreated": "6h ago",
+          "dateCreated": "8h ago",
           "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
           "tag": "UIDesign",
           "comments": ["This is a nice project!", "Good job!"]
         },
         {
           "id": 2,
-          "name": "Create New Wireframe",
+          "name": "Create Results Modal",
           "author": "Dan",
-          "dateCreated": "6h ago",
+          "dateCreated": "5h ago",
           "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-          "tag": "UIDesign",
+          "tag": "Frontend",
           "comments": ["This is a nice project!", "Good job!"]
         }],
         "complete": [{
           "id": 1,
-          "name": "Create New Wireframe",
+          "name": "Update Keyboard Colours",
           "author": "Dan",
-          "dateCreated": "6h ago",
+          "dateCreated": "2 days ago",
           "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
           "tag": "UIDesign",
           "comments": ["This is a nice project!", "Good job!"]
@@ -145,47 +145,47 @@ function App() {
         "timeCreated": '10:20',
         "toDo": [{
           "id": 1,
-          "name": "Create New Wireframe",
+          "name": "Create New Item Cards",
           "author": "Dan",
-          "dateCreated": "6h ago",
-          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-          "tag": "UIDesign",
+          "dateCreated": "15h ago",
+          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing ipsum dolor sit amet, consectetur adipiscing.",
+          "tag": "Frontend",
           "comments": ["This is a nice project!", "Good job!"]
         },
         {
           "id": 2,
-          "name": "Create Banner",
+          "name": "Check Colour Palette",
           "author": "Mike",
-          "dateCreated": "6h ago",
+          "dateCreated": "1h ago",
           "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
           "tag": "UIDesign",
           "comments": ["This is a nice project!", "Good job!"]
         }],
         "inProgress": [{
           "id": 1,
-          "name": "Create New Wireframe",
+          "name": "Fix Padding",
           "author": "Dan",
-          "dateCreated": "6h ago",
-          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-          "tag": "UIDesign",
+          "dateCreated": "5m ago",
+          "description": "Lorem consectetur adipiscing elit ut labore et dolore magna aliqua.",
+          "tag": "Frontend",
           "comments": ["This is a nice project!", "Good job!"]
         }],
         "complete": [{
           "id": 1,
-          "name": "Create New Wireframe",
+          "name": "Update User Information Display",
           "author": "Dan",
-          "dateCreated": "6h ago",
+          "dateCreated": "12h ago",
           "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
           "tag": "UIDesign",
-          "comments": ["This is a nice project!", "Good job!"]
+          "comments": ["This is a nice project!"]
         },
         {
           "id": 2,
-          "name": "Create New Wireframe",
+          "name": "Add Link To Portfolio Website",
           "author": "Dan",
-          "dateCreated": "6h ago",
+          "dateCreated": "1h ago",
           "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-          "tag": "UIDesign",
+          "tag": "Frontend",
           "comments": ["This is a nice project!", "Good job!"]
         }]
       }

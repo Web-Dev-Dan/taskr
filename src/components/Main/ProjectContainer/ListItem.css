@@ -2,7 +2,7 @@
 .list-item {
     /* background-color: red; */
     width: 100%;
-    min-height: 200px;
+    /* min-height: 200px; */
     margin-bottom: 20px;
     /* padding: 20px 10px; */
     border-top: 3px solid var(--color-gray-darkest);
@@ -22,6 +22,7 @@
 .list-item__title {
     font-size: 2rem;
     margin-bottom: 5px;
+    text-align: left;
 }
 
 .list-item__info {

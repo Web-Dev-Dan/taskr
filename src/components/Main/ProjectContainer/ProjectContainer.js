@@ -31,7 +31,7 @@ function ProjectContainer({
                         <i className="main__list-header--icon fa-solid fa-layer-group color-primary"></i>
                         <div className="main__list-header--text">
                             <h3 className="list-header__title">To Do</h3>
-                            <p className="list-header__subtitle">2 tasks remaining</p>
+                            <p className="list-header__subtitle">{projectToDo.length} {projectToDo.length === 1 ? 'task' : 'tasks'} remaining</p>
                         </div>
                     </div>
                     {/* List Button */}
@@ -42,7 +42,15 @@ function ProjectContainer({
                     {/* List */}
                     <div className="list">
                         {/* List Items */}
-                        {projectToDo.map(item => <ListItem key={item.id} />)}
+                        {projectToDo.map(item => <ListItem
+                            key={item.id}
+                            title={item.name}
+                            author={item.author}
+                            timeCreated={item.dateCreated}
+                            description={item.description}
+                            tag={item.tag}
+                            comments={item.comments}
+                        />)}
                     </div>
                 </div>
 
@@ -52,7 +60,7 @@ function ProjectContainer({
                         <i className="main__list-header--icon fa-solid fa-trowel-bricks color-yellow"></i>
                         <div className="main__list-header--text">
                             <h3 className="list-header__title">In Progress</h3>
-                            <p className="list-header__subtitle">2 tasks remaining</p>
+                            <p className="list-header__subtitle">{projectInProgress.length} {projectInProgress.length === 1 ? 'task' : 'tasks'} remaining</p>
                         </div>
                     </div>
                     {/* List Button */}
@@ -63,7 +71,15 @@ function ProjectContainer({
                     {/* List */}
                     <div className="list">
                         {/* List Items */}
-                        {projectInProgress.map(item => <ListItem key={item.id} />)}
+                        {projectInProgress.map(item => <ListItem
+                            key={item.id}
+                            title={item.name}
+                            author={item.author}
+                            timeCreated={item.dateCreated}
+                            description={item.description}
+                            tag={item.tag}
+                            comments={item.comments}
+                        />)}
                     </div>
                 </div>
 
@@ -73,7 +89,7 @@ function ProjectContainer({
                         <i className="main__list-header--icon fa-solid fa-fire color-green"></i>
                         <div className="main__list-header--text">
                             <h3 className="list-header__title">Complete</h3>
-                            <p className="list-header__subtitle">2 tasks remaining</p>
+                            <p className="list-header__subtitle">{projectComplete.length} {projectComplete.length === 1 ? 'task' : 'tasks'} remaining</p>
                         </div>
                     </div>
                     {/* List Button */}
@@ -84,7 +100,15 @@ function ProjectContainer({
                     {/* List */}
                     <div className="list">
                         {/* List Items */}
-                        {projectComplete.map(item => <ListItem key={item.id} />)}
+                        {projectComplete.map(item => <ListItem
+                            key={item.id}
+                            title={item.name}
+                            author={item.author}
+                            timeCreated={item.dateCreated}
+                            description={item.description}
+                            tag={item.tag}
+                            comments={item.comments}
+                        />)}
                     </div>
                 </div>
             </div>
