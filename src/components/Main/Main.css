@@ -1,19 +1,5 @@
 .main {
     /* background-color: green; */
     flex: 1;
-    padding: 0 30px 0 10px;
-}
-
-.main__head {}
-
-.main__head-info {}
-
-.head-info__title {
-    font-size: 4.4rem;
-}
-
-.head-info__date {
-    color: var(--color-gray-darkest);
-    font-size: 1.8rem;
-    font-weight: 100;
+    padding: 0 30px 0 30px;
 }

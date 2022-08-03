@@ -1,0 +1,14 @@
+.main__head {}
+
+.main__head-info {}
+
+.head-info__title {
+    font-size: 4.4rem;
+    margin-bottom: 10px;
+}
+
+.head-info__date {
+    color: var(--color-gray-darkest);
+    font-size: 1.8rem;
+    font-weight: 100;
+}

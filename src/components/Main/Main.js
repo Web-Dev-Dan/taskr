@@ -1,6 +1,7 @@
 
 import { useState } from 'react';
 import './Main.css';
+import ProjectContainer from './ProjectContainer/ProjectContainer';
 
 function Main({
     data,
@@ -15,14 +16,11 @@ function Main({
     return (
         <main className="main">
             {projectIsShown &&
-                <div className="project-container">
-                    <div className="main__head">
-                        <div className="main__head-info">
-                            <h2 className="head-info__title">{currentProject.name}</h2>
-                            <p className="head-info__date">Created on {currentProject.dateCreated} at {currentProject.timeCreated}.</p>
-                        </div>
-                    </div>
-                </div>
+                <ProjectContainer
+                    projectName={currentProject.name}
+                    projectDateCreated={currentProject.dateCreated}
+                    projectTimeCreated={currentProject.timeCreated}
+                />
             }
 
             {ticketIsShown &&
