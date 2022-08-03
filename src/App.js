@@ -226,7 +226,10 @@ function App() {
         "id": prev.items.length + 1,
         "name": task,
         "dateCreated": getCurrentDate(),
-        "timeCreated": getCurrentTime()
+        "timeCreated": getCurrentTime(),
+        "toDo": [],
+        "inProgress": [],
+        "complete": []
       });
       return prev;
     })
