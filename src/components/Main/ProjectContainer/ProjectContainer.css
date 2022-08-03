@@ -3,8 +3,17 @@
 .main__head-info {}
 
 .head-info__title {
+    font-family: var(--font-primary);
     font-size: 4.4rem;
+    font-weight: 600;
     margin-bottom: 10px;
+    border: none;
+}
+
+.head-info__title::placeholder {
+    font-family: var(--font-primary);
+    font-size: 4rem;
+    font-weight: 400;
 }
 
 .head-info__date {

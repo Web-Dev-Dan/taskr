@@ -10,6 +10,7 @@ function Main({
     ticketIsShown,
     ticketId
 }) {
+    // Get Current Project:
     const getCurrentProject = data.items.filter(project => project.id === projectId);
     const currentProject = getCurrentProject[0];
 
