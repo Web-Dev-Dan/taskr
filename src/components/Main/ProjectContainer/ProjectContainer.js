@@ -1,5 +1,6 @@
 
 import { useState } from 'react';
+import EmptyListDisplay from './EmptyListDisplay';
 import ListItem from './ListItem';
 import './ProjectContainer.css';
 
@@ -100,6 +101,7 @@ function ProjectContainer({
                     {/* List */}
                     <div className="list list--complete">
                         {/* List Items */}
+                        {projectComplete.length !== 0 && <EmptyListDisplay />}
                         {projectComplete.map(item => <ListItem
                             key={item.id}
                             title={item.name}
