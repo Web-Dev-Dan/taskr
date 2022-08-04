@@ -8,7 +8,8 @@ function Main({
     projectIsShown,
     projectId,
     ticketIsShown,
-    ticketId
+    ticketId,
+    ticketOpened
 }) {
     // Get Current Project:
     const getCurrentProject = data.items.filter(project => project.id === projectId);
@@ -25,6 +26,7 @@ function Main({
                     projectToDo={currentProject.toDo}
                     projectInProgress={currentProject.inProgress}
                     projectComplete={currentProject.complete}
+                    ticketOpened={ticketOpened}
                 />
             }
 

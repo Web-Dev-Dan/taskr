@@ -10,7 +10,8 @@ function ProjectContainer({
     projectTimeCreated,
     projectToDo,
     projectInProgress,
-    projectComplete
+    projectComplete,
+    ticketOpened
 }) {
 
     console.log(projectToDo)
@@ -46,12 +47,15 @@ function ProjectContainer({
                         {projectToDo.length === 0 && <EmptyListDisplay />}
                         {projectToDo.map(item => <ListItem
                             key={item.id}
+                            id={item.id}
+                            category='toDo'
                             title={item.name}
                             author={item.author}
                             timeCreated={item.dateCreated}
                             description={item.description}
                             tag={item.tag}
                             comments={item.comments}
+                            ticketOpened={ticketOpened}
                         />)}
                     </div>
                 </div>
@@ -76,12 +80,15 @@ function ProjectContainer({
                         {projectInProgress.length === 0 && <EmptyListDisplay />}
                         {projectInProgress.map(item => <ListItem
                             key={item.id}
+                            id={item.id}
+                            category='inProgress'
                             title={item.name}
                             author={item.author}
                             timeCreated={item.dateCreated}
                             description={item.description}
                             tag={item.tag}
                             comments={item.comments}
+                            ticketOpened={ticketOpened}
                         />)}
                     </div>
                 </div>
@@ -106,12 +113,15 @@ function ProjectContainer({
                         {projectComplete.length === 0 && <EmptyListDisplay />}
                         {projectComplete.map(item => <ListItem
                             key={item.id}
+                            id={item.id}
+                            category='complete'
                             title={item.name}
                             author={item.author}
                             timeCreated={item.dateCreated}
                             description={item.description}
                             tag={item.tag}
                             comments={item.comments}
+                            ticketOpened={ticketOpened}
                         />)}
                     </div>
                 </div>

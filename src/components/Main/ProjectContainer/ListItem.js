@@ -1,10 +1,21 @@
 
 import './ListItem.css';
 
-function ListItem({ title, author, timeCreated, description, tag, comments }) {
+function ListItem({
+    id,
+    category,
+    title,
+    author,
+    timeCreated,
+    description,
+    tag,
+    comments,
+    ticketOpened
+}) {
+    console.log(id)
     return (
         <div className="list-item">
-            <button className="list-item__button btn btn-transparent">
+            <button onClick={() => ticketOpened(id, category)} className="list-item__button btn btn-transparent">
                 <h4 className="list-item__title">{title}</h4>
                 <p className="list-item__info">{author}, {timeCreated}</p>
                 <p className="list-item__description">{description}</p>

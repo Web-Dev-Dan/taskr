@@ -233,6 +233,7 @@ function App() {
       });
       return prev;
     })
+
     // console.log(data);
   }
 
@@ -242,14 +243,18 @@ function App() {
   const [ticketIsShown, setTicketIsShown] = useState(false);
   const [ticketId, setTicketId] = useState(1);
 
-  // const [currentProject, setCurrentProject] = useState(data.items);
-  // const [testFunction, setTestFunction] = useState(1);
-
   // Select Project:
   function projectOpened(id) {
-    // setCurrentProject(data.items.filter(project => project.id === projectId));
     setProjectId(id);
-    // setTestFunction(id);
+    setProjectIsShown(true);
+    setTicketIsShown(false);
+  }
+
+  function ticketOpened(id, category) {
+    // console.log('Ticket opened!');
+    // console.log(`Project ID: ${projectId}`);
+    // console.log(`Ticket ID: ${ticketId}`);
+    console.log(`Project ID: ${projectId} (${category} ${id})`)
   }
 
   return (
@@ -269,7 +274,7 @@ function App() {
             projectId={projectId}
             ticketIsShown={ticketIsShown}
             ticketId={ticketId}
-          // currentProject={currentProject[0]}
+            ticketOpened={(id, category) => ticketOpened(id, category)}
           />
         </div>
       </div>
