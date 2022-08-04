@@ -1,7 +1,8 @@
 
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import './Main.css';
 import ProjectContainer from './ProjectContainer/ProjectContainer';
+import TicketContainer from './TicketContainer/TicketContainer';
 
 function Main({
     data,
@@ -15,6 +16,9 @@ function Main({
     const getCurrentProject = data.items.filter(project => project.id === projectId);
     const currentProject = getCurrentProject[0];
     console.log(currentProject);
+
+    console.log(`Project ID: ${projectId} (${ticketId})`)
+
 
     return (
         <main className="main">
@@ -31,9 +35,7 @@ function Main({
             }
 
             {ticketIsShown &&
-                <div className="ticket-container">
-                    ticket
-                </div>
+                <TicketContainer />
             }
         </main>
     )

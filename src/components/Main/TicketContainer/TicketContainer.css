@@ -1,0 +1,44 @@
+/* Ticket Header */
+.ticket__head {
+    margin: 70px 0 50px 0;
+}
+
+.ticket__head-info {}
+
+.ticket-info__info {
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.ticket-info__icon {
+    color: var(--color-primary);
+    font-size: 20px;
+    margin-right: 5px;
+}
+
+.ticket-info__subtitle {
+    font-family: var(--font-primary);
+    font-size: 1.8rem;
+    font-weight: 300;
+}
+
+.ticket-info__subtitle--strong {
+    font-weight: 700;
+}
+
+.ticket-info__title {
+    font-family: var(--font-primary);
+    font-size: 4.4rem;
+    font-weight: 600;
+    width: 100%;
+    margin-bottom: 10px;
+    border: none;
+    word-wrap: break-word;
+}
+
+.ticket-info__title::placeholder {
+    font-family: var(--font-primary);
+    font-size: 4rem;
+    font-weight: 400;
+}

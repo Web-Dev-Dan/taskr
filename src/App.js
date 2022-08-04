@@ -251,10 +251,10 @@ function App() {
   }
 
   function ticketOpened(id, category) {
-    // console.log('Ticket opened!');
-    // console.log(`Project ID: ${projectId}`);
-    // console.log(`Ticket ID: ${ticketId}`);
-    console.log(`Project ID: ${projectId} (${category} ${id})`)
+    setProjectIsShown(false);
+    setTicketIsShown(true);
+    setTicketId(id);
+    // console.log(`Project ID: ${projectId} (${category} ${id})`)
   }
 
   return (
