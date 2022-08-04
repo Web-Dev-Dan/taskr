@@ -86,3 +86,14 @@
     background-color: var(--color-green-light);
     border-top: 3px solid var(--color-green);
 }
+
+
+.list--in-progress .list-item__tag {
+    color: var(--color-yellow);
+    filter: brightness(90%);
+}
+
+.list--complete .list-item__tag {
+    color: var(--color-green);
+    filter: brightness(90%);
+}

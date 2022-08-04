@@ -43,6 +43,7 @@ function ProjectContainer({
                     {/* List */}
                     <div className="list list--to-do">
                         {/* List Items */}
+                        {projectToDo.length === 0 && <EmptyListDisplay />}
                         {projectToDo.map(item => <ListItem
                             key={item.id}
                             title={item.name}
@@ -72,6 +73,7 @@ function ProjectContainer({
                     {/* List */}
                     <div className="list list--in-progress">
                         {/* List Items */}
+                        {projectInProgress.length === 0 && <EmptyListDisplay />}
                         {projectInProgress.map(item => <ListItem
                             key={item.id}
                             title={item.name}
@@ -101,7 +103,7 @@ function ProjectContainer({
                     {/* List */}
                     <div className="list list--complete">
                         {/* List Items */}
-                        {projectComplete.length !== 0 && <EmptyListDisplay />}
+                        {projectComplete.length === 0 && <EmptyListDisplay />}
                         {projectComplete.map(item => <ListItem
                             key={item.id}
                             title={item.name}
