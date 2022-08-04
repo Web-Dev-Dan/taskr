@@ -71,3 +71,18 @@
     background-color: var(--color-primary-light);
     border-top: 3px solid var(--color-primary);
 }
+
+.list--to-do .list-item:hover {
+    background-color: var(--color-primary-light);
+    border-top: 3px solid var(--color-primary);
+}
+
+.list--in-progress .list-item:hover {
+    background-color: var(--color-yellow-light);
+    border-top: 3px solid var(--color-yellow);
+}
+
+.list--complete .list-item:hover {
+    background-color: var(--color-green-light);
+    border-top: 3px solid var(--color-green);
+}

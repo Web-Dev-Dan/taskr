@@ -40,7 +40,7 @@ function ProjectContainer({
                         <p className="list__add-btn--text">Add Task</p>
                     </button>
                     {/* List */}
-                    <div className="list">
+                    <div className="list list--to-do">
                         {/* List Items */}
                         {projectToDo.map(item => <ListItem
                             key={item.id}
@@ -69,7 +69,7 @@ function ProjectContainer({
                         <p className="list__add-btn--text">Add Task</p>
                     </button>
                     {/* List */}
-                    <div className="list">
+                    <div className="list list--in-progress">
                         {/* List Items */}
                         {projectInProgress.map(item => <ListItem
                             key={item.id}
@@ -98,7 +98,7 @@ function ProjectContainer({
                         <p className="list__add-btn--text">Add Task</p>
                     </button>
                     {/* List */}
-                    <div className="list">
+                    <div className="list list--complete">
                         {/* List Items */}
                         {projectComplete.map(item => <ListItem
                             key={item.id}
