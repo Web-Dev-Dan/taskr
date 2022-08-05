@@ -1,6 +1,9 @@
+/* Ticket Container */
+.ticket-container {}
+
 /* Ticket Header */
 .ticket__head {
-    margin: 70px 0 50px 0;
+    margin: 70px 0 5px 0;
 }
 
 .ticket__head-info {}
@@ -23,10 +26,6 @@
     font-weight: 300;
 }
 
-.ticket-info__subtitle--strong {
-    font-weight: 700;
-}
-
 .ticket-info__title {
     font-family: var(--font-primary);
     font-size: 4.4rem;
@@ -41,4 +40,109 @@
     font-family: var(--font-primary);
     font-size: 4rem;
     font-weight: 400;
+}
+
+.ticket-info__date {
+    color: var(--color-gray-darkest);
+    font-size: 1.8rem;
+    font-weight: 100;
+    margin-bottom: 15px;
+}
+
+.ticket-info__text--strong {
+    font-weight: 700;
+}
+
+
+.ticket-info__tag-container {
+    display: flex;
+    align-items: center;
+}
+
+.ticket-info__tag-icon {
+    color: var(--color-primary);
+    font-size: 20px;
+    margin-right: 3px;
+}
+
+.ticket-info__tag-input {
+    color: var(--color-primary);
+    font-family: var(--font-primary);
+    font-size: 2rem;
+    font-weight: 700;
+    padding: 5px 3px;
+    border: none;
+}
+
+.ticket-info__tag-input::placeholder {
+    font-family: var(--font-primary);
+    font-weight: 400;
+}
+
+.ticket__description-container {}
+
+.ticket__description {
+    background-color: transparent;
+    /* background-color: red; */
+    font-family: var(--font-primary);
+    font-size: 2rem;
+    font-weight: 100;
+    line-height: 1.5;
+    width: 100%;
+    max-width: 100%;
+    min-width: 200px;
+    min-height: 150px;
+    margin: 20px 0;
+    padding-right: 10px;
+    border: none;
+}
+
+/*
+.ticket__description-resize__container {
+    background-color: var(--color-primary);
+    width: 30px;
+    height: 30px;
+    border-radius: 50% 0 0 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    transform: translateY(-23px);
+    z-index: -10;
+}
+
+.ticket__description-resize__icon {
+    color: var(--color-light);
+    font-size: 18px;
+    transform: rotate(45deg);
+
+}
+
+::-webkit-resizer {
+    background-color: transparent;
+    width: 50px;
+    height: 50px;
+    z-index: 100;
+}
+*/
+
+::-webkit-resizer {
+    display: none;
+}
+
+.comments-container {
+    /* background-color: red; */
+    width: 100%;
+    height: 200px;
+}
+
+.comments-container__header {
+    font-size: 2.4rem;
+    font-weight: 600;
+}
+
+.comments-container__comments {
+    padding-bottom: 50px;
 }

@@ -24,7 +24,7 @@ function App() {
           "id": 1,
           "name": "Create New Wireframe",
           "author": "Dan",
-          "dateCreated": "6h ago",
+          "dateCreated": "5 Aug '22",
           "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
           "tag": "UIDesign",
           "comments": ["This is a nice project!", "Good job!", "This is a nice project!", "Good job!"]
