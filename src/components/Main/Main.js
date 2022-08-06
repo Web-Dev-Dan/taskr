@@ -46,6 +46,7 @@ function Main({
             {ticketIsShown &&
                 <TicketContainer
                     key={ticketId}
+                    data={data.items}
                     ticketId={ticketId}
                     projectId={projectId}
                     // currentProject={currentProject}

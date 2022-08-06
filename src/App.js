@@ -27,16 +27,60 @@ function App() {
           "dateCreated": "5 Aug '22",
           "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
           "tag": "UIDesign",
-          "comments": ["This is a nice project!", "Good job!", "This is a nice project!", "Good job!"]
+          "comments": [
+            {
+              "id": 1,
+              "author": "Daniel Healy",
+              "dateCreated": "Monday 10 July, 2022",
+              "timeCreated": "10:35",
+              "content": "This is a nice project!"
+            },
+            {
+              "id": 2,
+              "author": "Mike",
+              "dateCreated": "Tuesday 11 July, 2022",
+              "timeCreated": "14:48",
+              "content": "Good job!"
+            },
+            {
+              "id": 3,
+              "author": "Daniel Healy",
+              "dateCreated": "Tuesday 11 July, 2022",
+              "timeCreated": "15:02",
+              "content": "This is a nice project!"
+            },
+            {
+              "id": 4,
+              "author": "Steve",
+              "dateCreated": "Thursday 13 July, 2022",
+              "timeCreated": "19:11",
+              "content": "Good job!"
+            }
+          ]
         },
         {
           "id": 2,
           "name": "Update Email Form",
           "author": "Mike",
-          "dateCreated": "1 day ago",
+          "dateCreated": "Friday 6 August, 2022",
           "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, dolore magna aliqua.",
           "tag": "Frontend",
-          "comments": ["This is a nice project!", "Good job!"]
+          "comments": [
+            {
+              "id": 1,
+              "author": "Daniel Healy",
+              "dateCreated": "Monday 10 July, 2022",
+              "timeCreated": "10:35",
+              "content": "This is a nice project!"
+            },
+            {
+              "id": 2,
+              "author": "Mike",
+              "dateCreated": "Tuesday 11 July, 2022",
+              "timeCreated": "14:48",
+              "content": "Good job!"
+            },
+          ]
         }],
         "inProgress": [{
           "id": 1,
@@ -45,7 +89,22 @@ function App() {
           "dateCreated": "2 days ago",
           "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
           "tag": "Frontend",
-          "comments": ["This is a nice project!", "Good job!"]
+          "comments": [
+            {
+              "id": 1,
+              "author": "Daniel Healy",
+              "dateCreated": "Monday 10 July, 2022",
+              "timeCreated": "10:35",
+              "content": "This is a nice project!"
+            },
+            {
+              "id": 2,
+              "author": "Mike",
+              "dateCreated": "Tuesday 11 July, 2022",
+              "timeCreated": "14:48",
+              "content": "Good job!"
+            },
+          ]
         }],
         "complete": [{
           "id": 1,
@@ -68,7 +127,54 @@ function App() {
           "dateCreated": "3 days ago",
           "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
           "tag": "Frontend",
-          "comments": ["This is a nice project!", "Good job!", "This is a nice project!", "Good job!", "This is a nice project!", "Good job!", "This is a nice project!"]
+          "comments": [
+            {
+              "id": 1,
+              "author": "Daniel Healy",
+              "dateCreated": "Monday 10 July, 2022",
+              "timeCreated": "10:35",
+              "content": "This is a nice project!"
+            },
+            {
+              "id": 2,
+              "author": "Mike",
+              "dateCreated": "Tuesday 11 July, 2022",
+              "timeCreated": "14:48",
+              "content": "Good job!"
+            }, {
+              "id": 3,
+              "author": "Daniel Healy",
+              "dateCreated": "Monday 10 July, 2022",
+              "timeCreated": "10:35",
+              "content": "This is a nice project!"
+            },
+            {
+              "id": 4,
+              "author": "Mike",
+              "dateCreated": "Tuesday 11 July, 2022",
+              "timeCreated": "14:48",
+              "content": "Good job!"
+            }, {
+              "id": 5,
+              "author": "Daniel Healy",
+              "dateCreated": "Monday 10 July, 2022",
+              "timeCreated": "10:35",
+              "content": "This is a nice project!"
+            },
+            {
+              "id": 6,
+              "author": "Mike",
+              "dateCreated": "Tuesday 11 July, 2022",
+              "timeCreated": "14:48",
+              "content": "Good job!"
+            }, {
+              "id": 7,
+              "author": "Daniel Healy",
+              "dateCreated": "Monday 10 July, 2022",
+              "timeCreated": "10:35",
+              "content": "This is a nice project!"
+            }
+          ]
         },
         {
           "id": 2,
@@ -95,7 +201,15 @@ function App() {
           "dateCreated": "1 day ago",
           "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
           "tag": "Frontend",
-          "comments": ["Good job!"]
+          "comments": [
+            {
+              "id": 1,
+              "author": "Daniel Healy",
+              "dateCreated": "Monday 10 July, 2022",
+              "timeCreated": "10:35",
+              "content": "This is a nice project!"
+            }
+          ]
         }]
       }, {
         "id": 3,
@@ -109,7 +223,22 @@ function App() {
           "dateCreated": "1 day ago",
           "description": "Lorem ipsum dolor sit amet.",
           "tag": "Backend",
-          "comments": ["This is a nice project!", "Good job!"]
+          "comments": [
+            {
+              "id": 1,
+              "author": "Daniel Healy",
+              "dateCreated": "Monday 10 July, 2022",
+              "timeCreated": "10:35",
+              "content": "This is a nice project!"
+            },
+            {
+              "id": 2,
+              "author": "Mike",
+              "dateCreated": "Tuesday 11 July, 2022",
+              "timeCreated": "14:48",
+              "content": "Good job!"
+            }
+          ]
         }],
         "inProgress": [{
           "id": 1,
@@ -118,7 +247,22 @@ function App() {
           "dateCreated": "8h ago",
           "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
           "tag": "UIDesign",
-          "comments": ["This is a nice project!", "Good job!"]
+          "comments": [
+            {
+              "id": 1,
+              "author": "Daniel Healy",
+              "dateCreated": "Monday 10 July, 2022",
+              "timeCreated": "10:35",
+              "content": "This is a nice project!"
+            },
+            {
+              "id": 2,
+              "author": "Mike",
+              "dateCreated": "Tuesday 11 July, 2022",
+              "timeCreated": "14:48",
+              "content": "Good job!"
+            }
+          ]
         },
         {
           "id": 2,
@@ -127,7 +271,22 @@ function App() {
           "dateCreated": "5h ago",
           "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
           "tag": "Frontend",
-          "comments": ["This is a nice project!", "Good job!"]
+          "comments": [
+            {
+              "id": 1,
+              "author": "Daniel Healy",
+              "dateCreated": "Monday 10 July, 2022",
+              "timeCreated": "10:35",
+              "content": "This is a nice project!"
+            },
+            {
+              "id": 2,
+              "author": "Mike",
+              "dateCreated": "Tuesday 11 July, 2022",
+              "timeCreated": "14:48",
+              "content": "Good job!"
+            }
+          ]
         }],
         "complete": [{
           "id": 1,
@@ -136,7 +295,22 @@ function App() {
           "dateCreated": "2 days ago",
           "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
           "tag": "UIDesign",
-          "comments": ["This is a nice project!", "Good job!"]
+          "comments": [
+            {
+              "id": 1,
+              "author": "Daniel Healy",
+              "dateCreated": "Monday 10 July, 2022",
+              "timeCreated": "10:35",
+              "content": "This is a nice project!"
+            },
+            {
+              "id": 2,
+              "author": "Mike",
+              "dateCreated": "Tuesday 11 July, 2022",
+              "timeCreated": "14:48",
+              "content": "Good job!"
+            }
+          ]
         }]
       }, {
         "id": 4,
@@ -150,7 +324,22 @@ function App() {
           "dateCreated": "15h ago",
           "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing ipsum dolor sit amet, consectetur adipiscing.",
           "tag": "Frontend",
-          "comments": ["This is a nice project!", "Good job!"]
+          "comments": [
+            {
+              "id": 1,
+              "author": "Daniel Healy",
+              "dateCreated": "Monday 10 July, 2022",
+              "timeCreated": "10:35",
+              "content": "This is a nice project!"
+            },
+            {
+              "id": 2,
+              "author": "Mike",
+              "dateCreated": "Tuesday 11 July, 2022",
+              "timeCreated": "14:48",
+              "content": "Good job!"
+            }
+          ]
         },
         {
           "id": 2,
@@ -159,7 +348,22 @@ function App() {
           "dateCreated": "1h ago",
           "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
           "tag": "UIDesign",
-          "comments": ["This is a nice project!", "Good job!"]
+          "comments": [
+            {
+              "id": 1,
+              "author": "Daniel Healy",
+              "dateCreated": "Monday 10 July, 2022",
+              "timeCreated": "10:35",
+              "content": "This is a nice project!"
+            },
+            {
+              "id": 2,
+              "author": "Mike",
+              "dateCreated": "Tuesday 11 July, 2022",
+              "timeCreated": "14:48",
+              "content": "Good job!"
+            }
+          ]
         }],
         "inProgress": [{
           "id": 1,
@@ -168,7 +372,22 @@ function App() {
           "dateCreated": "5m ago",
           "description": "Lorem consectetur adipiscing elit ut labore et dolore magna aliqua.",
           "tag": "Frontend",
-          "comments": ["This is a nice project!", "Good job!"]
+          "comments": [
+            {
+              "id": 1,
+              "author": "Daniel Healy",
+              "dateCreated": "Monday 10 July, 2022",
+              "timeCreated": "10:35",
+              "content": "This is a nice project!"
+            },
+            {
+              "id": 2,
+              "author": "Mike",
+              "dateCreated": "Tuesday 11 July, 2022",
+              "timeCreated": "14:48",
+              "content": "Good job!"
+            }
+          ]
         }],
         "complete": [{
           "id": 1,
@@ -177,16 +396,39 @@ function App() {
           "dateCreated": "12h ago",
           "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
           "tag": "UIDesign",
-          "comments": ["This is a nice project!"]
+          "comments": [
+            {
+              "id": 1,
+              "author": "Daniel Healy",
+              "dateCreated": "Monday 10 July, 2022",
+              "timeCreated": "10:35",
+              "content": "This is a nice project!"
+            }
+          ]
         },
         {
           "id": 2,
           "name": "Add Link To Portfolio Website",
           "author": "Dan",
           "dateCreated": "1h ago",
-          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
           "tag": "Frontend",
-          "comments": ["This is a nice project!", "Good job!"]
+          "comments": [
+            {
+              "id": 1,
+              "author": "Daniel Healy",
+              "dateCreated": "Monday 10 July, 2022",
+              "timeCreated": "10:35",
+              "content": "This is a nice project!"
+            },
+            {
+              "id": 2,
+              "author": "Mike",
+              "dateCreated": "Tuesday 11 July, 2022",
+              "timeCreated": "14:48",
+              "content": "Good job!"
+            }
+          ]
         }]
       }
     ]
