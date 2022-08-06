@@ -12,7 +12,8 @@ function ProjectContainer({
     projectToDo,
     projectInProgress,
     projectComplete,
-    ticketOpened
+    ticketOpened,
+    updateProjectTitleInput
 }) {
 
     console.log(`PROJECT ID IS ${projectId}!!!!`)
@@ -23,7 +24,7 @@ function ProjectContainer({
             {/* Project Title Information */}
             <div className="main__head">
                 <div className="main__head-info">
-                    <input className="head-info__title" value={projectName} placeholder="Add Project Name..." type="text" />
+                    <input onChange={(e) => updateProjectTitleInput(e)} className="head-info__title" value={projectName} placeholder="Add Project Name..." type="text" />
                     <p className="head-info__date">Created on {projectDateCreated} at {projectTimeCreated}.</p>
                 </div>
             </div>

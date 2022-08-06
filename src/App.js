@@ -242,7 +242,7 @@ function App() {
   const [projectId, setProjectId] = useState(1);
   const [ticketIsShown, setTicketIsShown] = useState(false);
   const [ticketId, setTicketId] = useState(1);
-  const [ticketCategory, setTicketCategory] = ('toDo');
+  const [ticketCategory, setTicketCategory] = useState('toDo');
 
   // Select Project:
   function projectOpened(id) {
@@ -258,6 +258,22 @@ function App() {
     setTicketCategory(category);
     console.log(category);
     // console.log(`Project ID: ${projectId} (${category} ${id})`)
+  }
+
+  function updateProjectTitleInput(e) {
+    console.log(e.target.value);
+  }
+
+  function updateTicketTitleInput(e) {
+    console.log(e.target.value);
+  }
+
+  function updateTicketTagInput(e) {
+    console.log(e.target.value);
+  }
+
+  function updateTicketDescriptionInput(e) {
+    console.log(e.target.value);
   }
 
   return (
@@ -279,6 +295,10 @@ function App() {
             ticketId={ticketId}
             ticketOpened={(id, category) => ticketOpened(id, category)}
             ticketCategory={ticketCategory}
+            updateProjectTitleInput={(e) => updateProjectTitleInput(e)}
+            updateTicketTitleInput={(e) => updateTicketTitleInput(e)}
+            updateTicketTagInput={(e) => updateTicketTagInput(e)}
+            updateTicketDescriptionInput={(e) => updateTicketDescriptionInput(e)}
           />
         </div>
       </div>

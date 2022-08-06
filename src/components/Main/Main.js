@@ -11,7 +11,11 @@ function Main({
     ticketIsShown,
     ticketId,
     ticketOpened,
-    ticketCategory
+    ticketCategory,
+    updateProjectTitleInput,
+    updateTicketTitleInput,
+    updateTicketTagInput,
+    updateTicketDescriptionInput
 }) {
     // Get Current Project:
     const getCurrentProject = data.items.filter(project => project.id === projectId);
@@ -35,6 +39,7 @@ function Main({
                     projectInProgress={currentProject.inProgress}
                     projectComplete={currentProject.complete}
                     ticketOpened={ticketOpened}
+                    updateProjectTitleInput={updateProjectTitleInput}
                 />
             }
 
@@ -46,6 +51,9 @@ function Main({
                     // currentProject={currentProject}
                     projectName={currentProject.name}
                     ticketCategory={ticketCategory}
+                    updateTicketTitleInput={updateTicketTitleInput}
+                    updateTicketTagInput={updateTicketTagInput}
+                    updateTicketDescriptionInput={updateTicketDescriptionInput}
                 />
             }
         </main>
