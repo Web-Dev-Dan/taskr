@@ -242,6 +242,7 @@ function App() {
   const [projectId, setProjectId] = useState(1);
   const [ticketIsShown, setTicketIsShown] = useState(false);
   const [ticketId, setTicketId] = useState(1);
+  const [ticketCategory, setTicketCategory] = ('toDo');
 
   // Select Project:
   function projectOpened(id) {
@@ -254,6 +255,8 @@ function App() {
     setProjectIsShown(false);
     setTicketIsShown(true);
     setTicketId(id);
+    setTicketCategory(category);
+    console.log(category);
     // console.log(`Project ID: ${projectId} (${category} ${id})`)
   }
 
@@ -275,6 +278,7 @@ function App() {
             ticketIsShown={ticketIsShown}
             ticketId={ticketId}
             ticketOpened={(id, category) => ticketOpened(id, category)}
+            ticketCategory={ticketCategory}
           />
         </div>
       </div>

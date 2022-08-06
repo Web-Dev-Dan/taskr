@@ -10,20 +10,24 @@ function Main({
     projectId,
     ticketIsShown,
     ticketId,
-    ticketOpened
+    ticketOpened,
+    ticketCategory
 }) {
     // Get Current Project:
     const getCurrentProject = data.items.filter(project => project.id === projectId);
     const currentProject = getCurrentProject[0];
     console.log(currentProject);
 
-    console.log(`Project ID: ${projectId} (${ticketId})`)
+    console.log(`Project ID: ${projectId} (${ticketId})`);
+    console.log(`Ticket category is ${ticketCategory}`)
 
 
     return (
         <main className="main">
             {projectIsShown &&
                 <ProjectContainer
+                    key={projectId}
+                    projectId={projectId}
                     projectName={currentProject.name}
                     projectDateCreated={currentProject.dateCreated}
                     projectTimeCreated={currentProject.timeCreated}
@@ -35,7 +39,14 @@ function Main({
             }
 
             {ticketIsShown &&
-                <TicketContainer />
+                <TicketContainer
+                    key={ticketId}
+                    ticketId={ticketId}
+                    projectId={projectId}
+                    // currentProject={currentProject}
+                    projectName={currentProject.name}
+                    ticketCategory={ticketCategory}
+                />
             }
         </main>
     )

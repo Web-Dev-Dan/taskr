@@ -5,6 +5,7 @@ import ListItem from './ListItem';
 import './ProjectContainer.css';
 
 function ProjectContainer({
+    projectId,
     projectName,
     projectDateCreated,
     projectTimeCreated,
@@ -14,6 +15,7 @@ function ProjectContainer({
     ticketOpened
 }) {
 
+    console.log(`PROJECT ID IS ${projectId}!!!!`)
     console.log(projectToDo)
 
     return (
@@ -37,10 +39,10 @@ function ProjectContainer({
                         </div>
                     </div>
                     {/* List Button */}
-                    <button className="list__add-btn btn">
+                    <div className="list__add-btn btn">
                         <i className="list__add-btn--icon fa-solid fa-circle-plus"></i>
                         <p className="list__add-btn--text">Add Task</p>
-                    </button>
+                    </div>
                     {/* List */}
                     <div className="list list--to-do">
                         {/* List Items */}
@@ -70,10 +72,10 @@ function ProjectContainer({
                         </div>
                     </div>
                     {/* List Button */}
-                    <button className="list__add-btn btn">
+                    <div className="list__add-btn btn">
                         <i className="list__add-btn--icon fa-solid fa-circle-plus"></i>
                         <p className="list__add-btn--text">Add Task</p>
-                    </button>
+                    </div>
                     {/* List */}
                     <div className="list list--in-progress">
                         {/* List Items */}
@@ -103,10 +105,10 @@ function ProjectContainer({
                         </div>
                     </div>
                     {/* List Button */}
-                    <button className="list__add-btn btn">
+                    <div className="list__add-btn btn">
                         <i className="list__add-btn--icon fa-solid fa-circle-plus"></i>
                         <p className="list__add-btn--text">Add Task</p>
-                    </button>
+                    </div>
                     {/* List */}
                     <div className="list list--complete">
                         {/* List Items */}

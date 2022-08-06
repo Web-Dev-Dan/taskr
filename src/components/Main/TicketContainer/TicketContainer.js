@@ -2,7 +2,17 @@
 import TicketComment from './TicketComment';
 import './TicketContainer.css';
 
-function TicketContainer() {
+function TicketContainer({
+    ticketId,
+    projectId,
+    projectName,
+    // currentProject, 
+    ticketCategory
+}) {
+    console.log('-------')
+    console.log(`ProjectID: ${projectId} | Ticket ID: ${ticketId}`)
+
+
     return (
         <div className="ticket-container">
             {/* Ticket Title Information */}
@@ -11,7 +21,7 @@ function TicketContainer() {
                     {/* Header */}
                     <div className="ticket-info__info">
                         <i className="ticket-info__icon fa-solid fa-ticket"></i>
-                        <p className="ticket-info__subtitle">Opened a task for <strong className="ticket-info__text--strong">Portfolio</strong>.</p>
+                        <p className="ticket-info__subtitle">{ticketCategory} Opened a task for <strong className="ticket-info__text--strong">{projectName}</strong>.</p>
                     </div>
                     <input className="ticket-info__title" value="Create New Wireframe" placeholder="Add Ticket Name..." type="text" />
                     {/* Author / Date / Time */}
@@ -32,7 +42,7 @@ function TicketContainer() {
                 </div> */}
             </div>
             <div className="comments-container">
-                <p className="comments-container__header">Comments (5)</p>
+                <p className="comments-container__header">Comments (3)</p>
                 <div className="comments-container__comments">
                     <TicketComment />
                     <TicketComment />

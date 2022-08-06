@@ -12,7 +12,9 @@ function ListItem({
     comments,
     ticketOpened
 }) {
-    console.log(id)
+    // console.log(id)
+    // console.log(category)
+
     return (
         <div className="list-item">
             <button onClick={() => ticketOpened(id, category)} className="list-item__button btn btn-transparent">
@@ -22,10 +24,10 @@ function ListItem({
             </button>
             <div className="list-item__footer">
                 <p className="list-item__tag">#{tag}</p>
-                <button className="list-item__comments-btn btn btn-transparent">
+                <div className="list-item__comments-btn btn btn-transparent">
                     <i className="fa-solid fa-message"></i>
                     <p>{comments.length}</p>
-                </button>
+                </div>
             </div>
         </div>
     )

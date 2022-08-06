@@ -90,11 +90,13 @@
     line-height: 1.5;
     width: 100%;
     max-width: 100%;
-    min-width: 200px;
+    min-width: 100%;
     min-height: 150px;
     margin: 20px 0;
     padding-right: 10px;
+    padding-bottom: 20px;
     border: none;
+    resize: vertical;
 }
 
 /*
