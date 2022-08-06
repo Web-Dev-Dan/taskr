@@ -1,5 +1,4 @@
 .comment-box {
-    background-color: var(--color-primary-light);
     background-color: transparent;
     width: 100%;
     min-height: 80px;
@@ -53,4 +52,44 @@
     font-weight: 200;
     margin-top: 10px;
     line-height: 1.5;
+}
+
+
+/* ToDo Ticket */
+.ticket-container--primary .comment-box__icon {
+    color: var(--color-primary);
+}
+
+.ticket-container--primary .comment-box__content {
+    border-left: 5px solid var(--color-primary);
+}
+
+.ticket-container--primary .comment-box:hover {
+    background-color: var(--color-primary-light);
+}
+
+/* InProgress Ticket */
+.ticket-container--yellow .comment-box__icon {
+    color: var(--color-yellow);
+}
+
+.ticket-container--yellow .comment-box__content {
+    border-left: 5px solid var(--color-yellow);
+}
+
+.ticket-container--yellow .comment-box:hover {
+    background-color: var(--color-yellow-light);
+}
+
+/* Complete Ticket */
+.ticket-container--green .comment-box__icon {
+    color: var(--color-green);
+}
+
+.ticket-container--green .comment-box__content {
+    border-left: 5px solid var(--color-green);
+}
+
+.ticket-container--green .comment-box:hover {
+    background-color: var(--color-green-light);
 }

@@ -148,3 +148,26 @@
 .comments-container__comments {
     padding-bottom: 50px;
 }
+
+
+/* ToDo Ticket */
+.ticket-container--primary .ticket-info__tag-input,
+.ticket-container--primary .ticket-info__icon,
+.ticket-container--primary .ticket-info__tag-icon {
+    color: var(--color-primary);
+}
+
+/* InProgress Ticket */
+.ticket-container--yellow .ticket-info__tag-input,
+.ticket-container--yellow .ticket-info__icon,
+.ticket-container--yellow .ticket-info__tag-icon {
+    color: var(--color-yellow);
+}
+
+
+/* Complete Ticket */
+.ticket-container--green .ticket-info__tag-input,
+.ticket-container--green .ticket-info__icon,
+.ticket-container--green .ticket-info__tag-icon {
+    color: var(--color-green);
+}
