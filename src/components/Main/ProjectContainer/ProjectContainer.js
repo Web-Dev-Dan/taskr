@@ -13,7 +13,8 @@ function ProjectContainer({
     projectInProgress,
     projectComplete,
     ticketOpened,
-    updateProjectTitleInput
+    updateProjectTitleInput,
+    AddTaskBtnClicked
 }) {
 
     console.log(`PROJECT ID IS ${projectId}!!!!`)
@@ -40,10 +41,10 @@ function ProjectContainer({
                         </div>
                     </div>
                     {/* List Button */}
-                    <div className="list__add-btn btn">
+                    <button onClick={() => AddTaskBtnClicked(projectId, 'toDo')} className="list__add-btn btn">
                         <i className="list__add-btn--icon fa-solid fa-circle-plus"></i>
                         <p className="list__add-btn--text">Add Task</p>
-                    </div>
+                    </button>
                     {/* List */}
                     <div className="list list--to-do">
                         {/* List Items */}
@@ -73,10 +74,10 @@ function ProjectContainer({
                         </div>
                     </div>
                     {/* List Button */}
-                    <div className="list__add-btn btn">
+                    <button onClick={() => AddTaskBtnClicked(projectId, 'inProgress')} className="list__add-btn btn">
                         <i className="list__add-btn--icon fa-solid fa-circle-plus"></i>
                         <p className="list__add-btn--text">Add Task</p>
-                    </div>
+                    </button>
                     {/* List */}
                     <div className="list list--in-progress">
                         {/* List Items */}
@@ -106,10 +107,10 @@ function ProjectContainer({
                         </div>
                     </div>
                     {/* List Button */}
-                    <div className="list__add-btn btn">
+                    <button onClick={() => AddTaskBtnClicked(projectId, 'complete')} className="list__add-btn btn">
                         <i className="list__add-btn--icon fa-solid fa-circle-plus"></i>
                         <p className="list__add-btn--text">Add Task</p>
-                    </div>
+                    </button>
                     {/* List */}
                     <div className="list list--complete">
                         {/* List Items */}

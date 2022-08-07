@@ -13,6 +13,7 @@
 }
 
 .list-item__button {
+    width: 100%;
     padding: 20px 10px 0 10px;
     display: flex;
     flex-direction: column;

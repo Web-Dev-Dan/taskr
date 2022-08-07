@@ -518,6 +518,42 @@ function App() {
     console.log(e.target.value);
   }
 
+  function AddTaskBtnClicked(id, category) {
+    // console.log('Add task button clicked!');
+    // console.log(`Project ID: ${id} - ${category}`);
+    // console.log(data.items);
+
+    const newTask = data.items.filter(item => item.id === id);
+    // console.log(newTask[0]);
+    let newTaskCategory;
+    if (category === 'toDo') {
+      newTaskCategory = newTask[0].toDo;
+      setTicketCategory('toDo');
+    } else if (category === 'inProgress') {
+      newTaskCategory = newTask[0].inProgress;
+      setTicketCategory('inProgress');
+    } else if (category === 'complete') {
+      newTaskCategory = newTask[0].complete;
+      setTicketCategory('complete');
+    }
+    console.log(newTaskCategory);
+
+    newTaskCategory.push({
+      "id": newTaskCategory.length + 1,
+      "name": "",
+      "author": "User",
+      "dateCreated": "Now",
+      "description": "",
+      "tag": "",
+      "comments": []
+    });
+
+    setProjectIsShown(false);
+    setTicketIsShown(true);
+
+
+  }
+
   return (
     <div className="App">
       <div className="container">
@@ -541,6 +577,7 @@ function App() {
             updateTicketTitleInput={(e) => updateTicketTitleInput(e)}
             updateTicketTagInput={(e) => updateTicketTagInput(e)}
             updateTicketDescriptionInput={(e) => updateTicketDescriptionInput(e)}
+            AddTaskBtnClicked={(projectId, projectCategory) => AddTaskBtnClicked(projectId, projectCategory)}
           />
         </div>
       </div>

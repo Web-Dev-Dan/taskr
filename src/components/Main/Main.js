@@ -15,7 +15,8 @@ function Main({
     updateProjectTitleInput,
     updateTicketTitleInput,
     updateTicketTagInput,
-    updateTicketDescriptionInput
+    updateTicketDescriptionInput,
+    AddTaskBtnClicked
 }) {
     // Get Current Project:
     const getCurrentProject = data.items.filter(project => project.id === projectId);
@@ -40,6 +41,7 @@ function Main({
                     projectComplete={currentProject.complete}
                     ticketOpened={ticketOpened}
                     updateProjectTitleInput={updateProjectTitleInput}
+                    AddTaskBtnClicked={AddTaskBtnClicked}
                 />
             }
 
