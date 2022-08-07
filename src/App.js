@@ -502,8 +502,13 @@ function App() {
     // console.log(`Project ID: ${projectId} (${category} ${id})`)
   }
 
-  function updateProjectTitleInput(e) {
+  // Update Input Text:
+  function updateProjectTitleInput(e, projectId) {
     console.log(e.target.value);
+    let projectName = data.items.filter(item => item.id === projectId);
+    console.log(e.target.value)
+    console.log(projectName[0])
+    console.log(projectId)
   }
 
   function updateTicketTitleInput(e) {
@@ -518,11 +523,11 @@ function App() {
     console.log(e.target.value);
   }
 
+  // Add New Task:
   function AddTaskBtnClicked(id, category) {
     // console.log('Add task button clicked!');
     // console.log(`Project ID: ${id} - ${category}`);
     // console.log(data.items);
-
     const newTask = data.items.filter(item => item.id === id);
     // console.log(newTask[0]);
     let newTaskCategory;
@@ -550,8 +555,6 @@ function App() {
 
     setProjectIsShown(false);
     setTicketIsShown(true);
-
-
   }
 
   return (
@@ -573,7 +576,7 @@ function App() {
             ticketId={ticketId}
             ticketOpened={(id, category) => ticketOpened(id, category)}
             ticketCategory={ticketCategory}
-            updateProjectTitleInput={(e) => updateProjectTitleInput(e)}
+            updateProjectTitleInput={(e, projectId) => updateProjectTitleInput(e, projectId)}
             updateTicketTitleInput={(e) => updateTicketTitleInput(e)}
             updateTicketTagInput={(e) => updateTicketTagInput(e)}
             updateTicketDescriptionInput={(e) => updateTicketDescriptionInput(e)}
